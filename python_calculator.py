@@ -7,24 +7,53 @@ Original file is located at
     https://colab.research.google.com/drive/1aY3FB7ZqPuwRHkS7Uy08fGAWubnvt_mc
 """
 
-#Python Calculator:
+#Name: Chinmay Sanjay Rane
+
+#Task 1: Simple Python Calculator
+
+# Arithmetic Operators in python:
+# Python arithmatic operation are used 7 arithamatic operator to perform mathematical operation 
+# like Addition, Subtraction, Multiplication, Divide(float), division(floor), Modulus(remainder), Power(exponentiation operator) 
 
 def add(P, Q):    
    return P + Q   
+
 def subtract(P, Q):   
    return P - Q   
+
 def multiply(P, Q):   
    return P * Q   
-def divide(P, Q):   
-   return P / Q    
 
-print ("Select the option:")    
-print ("a. Add")    
+def divide(P, Q):   
+   return P / Q
+
+def division(P, Q):   
+   return P // Q    
+
+def modulus(P, Q):   
+   return P % Q
+
+def power(P, Q):   
+   return P ** Q
+
+
+print ("Choose the option:")    
+
+print ("a. Add")
+
 print ("b. Subtract")    
+
 print ("c. Multiply")    
+
 print ("d. Divide")    
-    
-choice = input("Please enter choice (a/ b/ c/ d): ")    
+
+print ("e. Division")    
+
+print ("f. Modulus")    
+
+print ("g. Power")
+
+choice = input("Please enter choice (a/ b/ c/ d/ e/ f/ g/):")    
     
 num_1 = int (input ("Please enter the first number: "))    
 num_2 = int (input ("Please enter the second number: "))    
@@ -38,11 +67,25 @@ elif choice == 'b':
    print (num_1, " - ", num_2, " = ", subtract(num_1, num_2))    
     
 elif choice == 'c':    
-   print("Multiplication :")
-   print (num1, " * ", num2, " = ", multiply(num1, num2))    
+   print("Multiplication :")  
+   print (num_1, " * ", num_2, " = ", multiply(num_1, num_2))    
+
 elif choice == 'd':    
-   print("Division :")
+   print("Divide :")
    print (num_1, " / ", num_2, " = ", divide(num_1, num_2))    
+    
+elif choice == 'e':    
+   print("Division :")
+   print (num_1, " // ", num_2, " = ", division(num_1, num_2))    
+    
+elif choice == 'f':    
+   print("Modulus :")
+   print (num_1, " % ", num_2, " = ", modulus(num_1, num_2))    
+
+elif choice == 'g':    
+   print("Power :")
+   print (num_1, " ** ", num_2, " = ", power(num_1, num_2))    
+
 else:    
    print ("This is an invalid input")
 
